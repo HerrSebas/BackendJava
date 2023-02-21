@@ -1,9 +1,12 @@
-public class Funcionario {
+public abstract class Funcionario {
     private String nombre;
     private String documento;
-    private double salario;
+    protected double salario;
 
     
+    public Funcionario() {
+        
+    }
     public Funcionario(String nombre, String documento, double salario) {
         this.nombre = nombre;
         this.documento = documento;
@@ -29,7 +32,6 @@ public class Funcionario {
     }
 
     //Calculo de bonificación
-    public double getBonificacion(){
-        return this.salario * 0.1;
-    }    
+    public abstract double getBonificacion();
+
 }

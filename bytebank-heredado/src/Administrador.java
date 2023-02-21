@@ -1,10 +1,11 @@
-public class Gerente extends Funcionario implements Autenticacion{
+public class Administrador extends Funcionario implements Autenticacion{
 
     private AutenticacionUtil autenticador;
-    
-    public Gerente(){
+
+    public Administrador() {
         this.autenticador = new AutenticacionUtil();
     }
+
 
     @Override
     public void setContraseña(int contraseña) {
@@ -22,4 +23,5 @@ public class Gerente extends Funcionario implements Autenticacion{
         // TODO Auto-generated method stub
         return 0;
     }
+    
 }
